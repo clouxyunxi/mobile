@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="cloux.ico">
+    <title>cloux-主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Georgia", "Times New Roman", "宋体", serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .bg-blur {
+            position: fixed;
+            top: -10%;
+            left: -10%;
+            width: 120%;
+            height: 120%;
+            background-image: url('https://t.alcy.cc/fj');
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            z-index: -1;
+        }
+        .corner-table {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-size: 12px;
+        }
+        .content-wrapper {
+            padding: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .main-table {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 20px;
+        }
+        .avatar-img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .intro-section {
+            margin-bottom: 60vh;
+        }
+        .contact-table {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .qrcode-img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .footer-table {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        h1 {
+            font-size: 1.5em;
+        }
+        h2 {
+            font-size: 1.3em;
+        }
+        h3 {
+            font-size: 1.2em;
+        }
+        h4 {
+            font-size: 1.1em;
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+    </style>
+<!--
+    <script>
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent)) {
+            window.location.href = "https://owo1.org";
+        }
+    </script>
+--> 
+</head>
+
+<body>
+    <div class="bg-blur"></div>
+    <table border="1" class="corner-table">
+        <tr>
+            <td>欢迎来到cloux主页 owo</td>
+            <td>站主状态：活着</td>
+        </tr>
+    </table>
+    <div class="content-wrapper">
+        <table border="0" class="main-table" style="background-color: WhiteSmoke;">
+            <tr>
+                <td><img src="cloux.webp" alt="cloux头像" class="avatar-img"></td>
+            </tr>
+            <tr>
+                <td><h1><p style="color: rgb(110, 210, 250);"><i>&nbsp;&nbsp;&nbsp;I'm cloux;qwq.&nbsp;&nbsp;&nbsp;</i></p></h1></td>
+            </tr>
+        </table>
+        <div class="intro-section">
+            <h3><p style="color: rgb(255, 255, 255);">简介：</p></h3>
+            <h2><p style="color: rgb(255, 255, 255);">这里没有什么</p></h2>
+            <p style="color: rgb(255, 255, 255);">你可以点击<a href="https://www.bilibili.com">这里</a>前往bilibili</p>
+            <h4><p style="color: rgb(255, 255, 255);">owo</p></h4>
+        </div>
+        <hr>
+        <table border="0" class="contact-table" style="background-color: WhiteSmoke;">
+            <tr>
+                <td>
+                    <p style="color: rgb(0, 0, 0);">邮箱：cloud.xi@outlook.com</p>
+                    <p style="color: rgb(0, 0, 0);">QQ：3819475378</p>
+                    <p style="color: rgb(0, 0, 0);">github：clouxyunxi</p>
+                    <p><img src="qq.webp" alt="qq二维码" class="qrcode-img"></p>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <p style="color: Red;">Σ(°Д°;)</p>
+        <a href="https://www.bilibili.com/video/BV1UT42167xb"><p style="color: Red;">[千万别点]</p></a>
+        <table border="0" class="footer-table" style="background-color: WhiteSmoke;">
+            <tr>
+                <td>
+                    <a href="https://icp.gov.moe/?keyword=20260944" target="_blank"><p style="color: rgb(0, 0, 0);">萌ICP备20260944号</p></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function updateTime() {
+            document.getElementById('current-time').textContent = new Date().toLocaleString();
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
